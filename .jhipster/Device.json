@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230802093439",
+  "entityTableName": "device",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "serialNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "purchaseDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Device",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no"
+}

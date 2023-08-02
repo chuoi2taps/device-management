@@ -1,0 +1,8 @@
+entity Device {
+    name String required
+    serialNumber String required
+    status String required
+    purchaseDate LocalDate required
+
+}
+paginate * with pagination

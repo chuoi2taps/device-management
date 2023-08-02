@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="device">
+      <h2 data-cy="deviceDetailsHeading"><span jhiTranslate="deviceManageApp.device.detail.title">Device</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ device.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="deviceManageApp.device.name">Name</span></dt>
+        <dd>
+          <span>{{ device.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="deviceManageApp.device.serialNumber">Serial Number</span></dt>
+        <dd>
+          <span>{{ device.serialNumber }}</span>
+        </dd>
+        <dt><span jhiTranslate="deviceManageApp.device.status">Status</span></dt>
+        <dd>
+          <span>{{ device.status }}</span>
+        </dd>
+        <dt><span jhiTranslate="deviceManageApp.device.purchaseDate">Purchase Date</span></dt>
+        <dd>
+          <span>{{ device.purchaseDate | formatMediumDate }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/device', device.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

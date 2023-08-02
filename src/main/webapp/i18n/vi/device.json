@@ -1,0 +1,27 @@
+{
+  "deviceManageApp": {
+    "device": {
+      "home": {
+        "title": "Devices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Device",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Device",
+        "notFound": "No Devices found"
+      },
+      "created": "Một Device mới được tạo với định danh {{ param }}",
+      "updated": "Một Device cập nhật với định danh {{ param }}",
+      "deleted": "Một Device đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Device {{ id }}?"
+      },
+      "detail": {
+        "title": "Device"
+      },
+      "id": "ID",
+      "name": "Name",
+      "serialNumber": "Serial Number",
+      "status": "Status",
+      "purchaseDate": "Purchase Date"
+    }
+  }
+}
